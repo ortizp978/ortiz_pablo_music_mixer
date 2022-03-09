@@ -8,13 +8,12 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
-
 </head>
-<body bgcolor="black">
 
-  <header id="headLine">
-    <h1>drag and drop!</h1>
-    <p>solve the puzzle</p>
+<body>
+
+  <header class="hidden">
+    <h1>Music Mixer by Pablo Ortiz</h1>
   </header>
 
   <section id="siteContainer">
@@ -22,17 +21,17 @@
     <div id="background">
 
       <div class="generalDropZone">
-        <div class="dropZone1"><p>Drop Zone 1</P></div>
-        <div class="dropZone1"><p>Drop Zone 2</P></div>
-        <div class="dropZone1"><p>Drop Zone 3</P></div>
-        <div class="dropZone1"><p>Drop Zone 4</P></div>
+        <div class="dropZone"></div>
+        <div class="dropZone"></div>
+        <div class="dropZone"></div>
+        <div class="dropZone"></div>
       </div>
 
-      <div class="generalDragZone">
-        <div class="dragZone1"><p>Drag Zone 1</P></div>
-        <div class="dragZone1"><p>Drag Zone 2</P></div>
-        <div class="dragZone1"><p>Drag Zone 3</P></div>
-        <div class="dragZone1"><p>Drag Zone 4</P></div>
+      <div id="generalDragZone">
+        <img id="guitar" dragable="true" src="images/guitar.png" class="instrument-image" alt="guitar photo">
+        <img id="bass" dragable="true" src="images/bass.png" class="instrument-image" alt="bass photo">
+        <img id="drum" dragable="true" src="images/drum.png" class="instrument-image" alt="drum photo">
+        <img id="maracas" dragable="true" src="images/maracas.png" class="instrument-image" alt="maracas photo">
       </div>
 
     </div>

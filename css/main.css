@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 body {
+	background-color: #000000;
 	margin: 0px;
 	border: 0px;
 }
@@ -11,13 +12,13 @@ p {
   font-weight: bold;
 }
 
-header {
+/* header {
 	position: relative;
 	top: 20px;
 	width:600px;
 	margin: 0px auto;
 	text-align: center;
-}
+} */
 
 .hidden {
   display: none;
@@ -27,6 +28,7 @@ header {
   margin: 0 auto;
   width: 1280px;
 	background-color: #ccc;
+	display: flex;
 }
 
 #background {
@@ -38,25 +40,38 @@ header {
   height: 720px;
 }
 
+.instrument-image:nth-child(even) {
+	float: right;
+	clear: both;
+}
+.instrument-image:nth-child(odd) {
+	float: left;
+	clear: both;
+}
+
 .generalDropZone {
   justify-content: space-between;
-  margin: 370px 0 0 278px;
+  margin: 360px 0 0 278px;
   display: flex;
   float: left;
   width: 772px;
   height: 140px;
 }
 
-.dropZone1 {
+.dropZone {
 	display: flex;
-  text-align: center;
   width: 140px;
   height: 140px;
-  opacity: 60%;
-	background-color: white;
+	float: left;
+	position: relative;
 }
 
-.generalDragZone {
+/* .dz1 img { right: 0; bottom: 0;}
+.dz2 img { left: 0; bottom: 0;}
+.dz3 img { right: 0; top: 0;}
+.dz4 img { left: 0; top: 0;} */
+
+#generalDragZone {
   justify-content: space-between;
   margin: 25px 0 0 235px;
   display: flex;
@@ -65,11 +80,26 @@ header {
   height: 140px;
 }
 
-.dragZone1 {
+#guitar {
 	display: flex;
-  text-align: center;
   width: 140px;
   height: 140px;
-  opacity: 60%;
-	background-color: white;
+}
+
+#bass {
+	display: flex;
+  width: 140px;
+  height: 140px;
+}
+
+#drum {
+	display: flex;
+  width: 140px;
+  height: 140px;
+}
+
+#maracas {
+	display: flex;
+  width: 140px;
+  height: 140px;
 }
