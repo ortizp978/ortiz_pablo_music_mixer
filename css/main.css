@@ -11,6 +11,14 @@ p {
   font-weight: bold;
 }
 
+header {
+	position: relative;
+	top: 20px;
+	width:600px;
+	margin: 0px auto;
+	text-align: center;
+}
+
 .hidden {
   display: none;
 }
@@ -40,11 +48,12 @@ p {
 }
 
 .dropZone1 {
+	display: flex;
   text-align: center;
   width: 140px;
   height: 140px;
-  background-color: white;
   opacity: 60%;
+	background-color: white;
 }
 
 .generalDragZone {
@@ -57,9 +66,10 @@ p {
 }
 
 .dragZone1 {
+	display: flex;
   text-align: center;
   width: 140px;
   height: 140px;
-  background-color: white;
   opacity: 60%;
+	background-color: white;
 }
